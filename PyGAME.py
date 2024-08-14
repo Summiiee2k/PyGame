@@ -17,13 +17,13 @@ gold = (255,215,0)
 
 #sprites
 window = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
-character_img = pygame.image.load("E:\Run.png").convert_alpha()
-jumping_character_img = pygame.image.load("E:\Jump.png").convert_alpha()  
-pipe_img = pygame.image.load("D:\slot.png").convert_alpha()
-title_img = pygame.image.load("E:\logo.png").convert_alpha()
-gameover_screen = pygame.image.load("E:\Gameover.png").convert_alpha()
-background_img = pygame.image.load("E:\poster.jpg").convert()
-coin = pygame.image.load("E:\coin.png").convert_alpha()
+character_img = pygame.image.load("Run.png").convert_alpha()
+jumping_character_img = pygame.image.load("Jump.png").convert_alpha()  
+pipe_img = pygame.image.load("slot.png").convert_alpha()
+title_img = pygame.image.load("logo.png").convert_alpha()
+gameover_screen = pygame.image.load("Gameover.png").convert_alpha()
+background_img = pygame.image.load("poster.jpg").convert()
+coin = pygame.image.load("coin.png").convert_alpha()
 
 
 character_img = pygame.transform.scale(character_img, (50, 50))  
@@ -32,13 +32,13 @@ pipe_img = pygame.transform.scale(pipe_img, (60, random.randint(150, 400)))
 background_img = pygame.transform.scale(background_img, (SCREEN_WIDTH, SCREEN_HEIGHT))
 
 #sound effects
-point_sound = pygame.mixer.Sound("E:\half.mp3")
-hit_sound = pygame.mixer.Sound("E:\HIT1.mp3")
-highscore_sound = pygame.mixer.Sound("E:\point.mp3")
-initial_sound = pygame.mixer.Sound("E:\start.mp3")
-jump_sound = pygame.mixer.Sound("E:\jump.mp3")
-kaching = pygame.mixer.Sound("E:\kaching.mp3")
-bg_music_path = "E:\music.mp3"
+point_sound = pygame.mixer.Sound("half.mp3")
+hit_sound = pygame.mixer.Sound("HIT1.mp3")
+highscore_sound = pygame.mixer.Sound("point.mp3")
+initial_sound = pygame.mixer.Sound("start.mp3")
+jump_sound = pygame.mixer.Sound("jump.mp3")
+kaching = pygame.mixer.Sound("kaching.mp3")
+bg_music_path = "music.mp3"
 
 #seting up the window
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
